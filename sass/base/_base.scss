@@ -1,0 +1,23 @@
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.6rem;
+	line-height: 2rem;
+	font-family: serif;
+	font-family: "Varela Round", Verdana, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: $base_color;
+	color: $content-color;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 100%;
+}
+* {
+	transition: 0.5s;
+}

@@ -1,0 +1,31 @@
+.year {
+	margin: 0 20px;
+}
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 50px;
+	@media screen and (max-width: 650px) {
+			margin: 0 5px;
+		}
+}
+.rss-logo {
+	display: block;
+	height: 50px;
+	width: 135px;
+	background-image: url("..//..//assets/svg/rss.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 5px 0;
+	&:hover {
+		filter: invert(27%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+	}
+}
+a {
+	text-decoration: none;
+	color: $content-color;
+	&:hover {
+		color: $hilights-color;
+	}
+}

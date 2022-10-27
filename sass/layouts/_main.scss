@@ -1,0 +1,111 @@
+.main {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	background-image: url("..//..//assets/img/forest.jpg");
+	width: 100%;
+	height: calc(100vh - 120px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	.button{
+		cursor: pointer;
+	}
+.play {
+	height: 150px;
+	width: 150px;
+	background-image: url("..//..//assets/svg/play.svg");
+	border: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	&:hover {
+		filter: invert(33%) sepia(28%) saturate(341%) hue-rotate(6deg) brightness(97%) contrast(91%);
+	}
+}
+.pause {
+	background-image: url("..//..//assets/svg/pause.svg");
+}
+.bird{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	//background-color: $hilights-color;
+	background-image: url("..//..//assets/img/bird.png");
+	filter: invert(73%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+	background-size: contain;
+	background-position-x: 100%;
+	background-repeat: no-repeat;
+	right: 0;
+	top: 20%;
+	opacity: 0;
+	
+}
+/* 
+.bird-animation{
+	animation-name: opacity-change;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	z-index: 5;
+}
+
+@keyframes opacity-change{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 100%;
+	}
+} */
+.wrapper__main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.volume{
+	margin-top: 50px;
+}
+
+.volumeSlider  {
+      width: 200px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+   }
+
+.volumeSlider::-webkit-slider-runnable-track {
+	height: 7px;
+//	border: 1px solid $hilights-hover-color;
+   background-color: $hilights-color;
+	&:hover {
+		filter: invert(33%) sepia(28%) saturate(341%) hue-rotate(6deg) brightness(97%) contrast(91%);
+	}
+	}
+.volumeSlider::-webkit-slider-thumb {
+      background-color: $hilights-color;
+		border: 1px solid $hilights-hover-color;
+      border-radius: 10px/100%;
+      cursor: pointer;
+      width:15px;
+      height: 15px;
+      -webkit-appearance: none;
+      margin-top: -4px;
+		&:hover {
+		filter: invert(33%) sepia(28%) saturate(341%) hue-rotate(6deg) brightness(97%) contrast(91%);
+		box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	}
+		}
+
+.volumeSlider::-moz-range-track {
+   height: 5px;
+	//border: 1px solid $hilights-hover-color;
+      background-color: $hilights-color;
+			
+   }
+.volumeSlider::-moz-range-thumb {
+	//border: 1px solid $hilights-hover-color;
+   background-color: $hilights-color;
+   border-radius: 10px/100%;
+	cursor: pointer;
+	}

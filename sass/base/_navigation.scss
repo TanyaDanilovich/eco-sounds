@@ -1,0 +1,32 @@
+.nav__list {
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (max-width: 560px) {
+			max-width: 300px;
+			margin: 0 auto;
+			justify-content: space-around;
+		}
+}
+.nav__item {
+	padding: 20px 5px;
+	margin: 0 5px;
+	cursor: pointer;
+	text-align: center;
+	&:hover {
+		color: $hilights-color;
+		font-size: 1.8rem;
+	}
+}
+.active {
+	//color: $hilights-color;
+	filter: invert(27%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+}
+.navigation{
+	.nav__item{
+		width: 115px;
+		@media screen and (max-width: 780px) {
+			width: auto;
+		}
+	}
+	
+}

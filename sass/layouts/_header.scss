@@ -1,0 +1,25 @@
+.header {
+	background-color: #000;
+	color: $content-color;
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 50px;
+		@media screen and (max-width: 650px) {
+			margin: 0 5px;
+		}
+}
+.logo {
+	width: 45px;
+	height: 50px;
+	background-image: url("..//..//assets/svg/logo1.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	&:hover {
+		background-size: 110% 110%;
+		filter: invert(27%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+	}
+}

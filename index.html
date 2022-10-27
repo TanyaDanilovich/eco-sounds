@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+	<title>Eco-sound player</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__content ">
+				<logo class="logo nav__item" id="forest"></logo>
+				<nav class="navigation">
+					<ul class="nav__list">
+						<li class="nav__item" id="drozd">Дрозд</li>
+						<li class="nav__item" id="javoronok">Жаворонок</li>
+						<li class="nav__item" id="slavka">Славка</li>
+						<li class="nav__item" id="solovey">Соловей</li>
+						<li class="nav__item" id="zarynka">Зарянка</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="bird"></div>
+		<div class="wrapper wrapper__main">
+			<button class=" button play"></button>
+			<div class="volume">
+				<!-- <label for="volumeSlider">Volume</label> -->
+				<input class="volumeSlider" type="range" min="0" max="1" step=".001" />
+			</div>
+		</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__content">
+				<div class="footer__item">
+					<span class="copyright">©</span>
+					<span class="year">2022</span>
+					<a class="github-link" href="https://github.com/TanyaDanilovich">My github</a>
+				</div>
+				<a class="rss-logo" href="https://rs.school/js-stage0/"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
